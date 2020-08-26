@@ -11,7 +11,9 @@
     "url": "https://github.com/ampproject/amphtml.git"
   },
   "scripts": {
-    "preinstall": "node build-system/common/check-package-manager.js"
+    "preinstall": "node build-system/common/check-package-manager.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "@ampproject/animations": "0.2.2",
@@ -27,7 +29,8 @@
     "react-dates": "15.5.3",
     "rrule": "2.6.4",
     "web-activities": "1.13.0",
-    "web-animations-js": "2.3.1"
+    "web-animations-js": "2.3.1",
+    "snyk": "^1.385.0"
   },
   "devDependencies": {
     "0x": "4.9.1",
@@ -194,5 +197,6 @@
     "vinyl-source-stream": "2.0.0",
     "vinyl-sourcemaps-apply": "0.2.1",
     "watchify": "3.11.1"
-  }
+  },
+  "snyk": true
 }
