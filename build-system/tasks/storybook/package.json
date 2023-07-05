@@ -4,7 +4,7 @@
   "description": "Gulp storybook tasks",
   "main": "index.js",
   "dependencies": {
-    "@babel/core": "7.9.0",
+    "@babel/core": "7.22.6",
     "@babel/preset-react": "7.9.4",
     "@babel/runtime-corejs3": "7.9.2",
     "@storybook/addon-a11y": "5.3.18",
